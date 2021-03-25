@@ -1,5 +1,11 @@
 {
   "store.search": {
+    "props": {
+      "context": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulaitonBehavior": "skip"
+      }
+    },
     "blocks": ["search-result-layout#search"]
   },
 
@@ -109,6 +115,11 @@
       "blockClass": "depbanner"
     }
   },
+  "image#depbanner": {
+    "props": {
+      "src": "assets/electronics.png"
+    }
+  },
 
   "search-result-layout.desktop#dep": {
     "children": [
@@ -201,7 +212,7 @@
 
   "flex-layout.row#depBanner": {
     "children": [
-      "info-card#depbanner"
+      "image#depbanner"
     ]
   },
 
